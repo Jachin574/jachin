@@ -1,3 +1,6 @@
+* {
+    font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu
+}
 html {
     height: 100%;
 }
@@ -8,7 +11,7 @@ body {
     height: 100%;
     overflow: hidden;
 }
-
+.fl{float:left;}
 #win10 *{
     -webkit-user-select:none;
     -moz-user-select:none;

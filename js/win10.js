@@ -611,7 +611,7 @@ window.Win10 = {
     },
     openUrl: function (url, title,areaAndOffset) {
         if(this._countTask>12){
-            layer.msg("您打开的太多了，歇会儿吧~");
+            layer.msg("您打开的超过12个了，关了暂时没用的吧。");
             return false;
         }else{
             this._countTask++;
@@ -652,7 +652,6 @@ window.Win10 = {
             content: url,
             area: area,
             offset: offset,
-            isOutAnim: false,
             skin:'win10-open-iframe',
             cancel: function (index, layero) {
                 $("#win10_" + index).remove();
