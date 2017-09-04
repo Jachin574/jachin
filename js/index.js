@@ -1,3 +1,19 @@
+(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))
+
+tpwidget("init", {
+    "flavor": "bubble",
+    "location": "WS0E9D8WN298",
+    "geolocation": "disabled",
+    "position": "top-right",
+    "margin": "10px 10px",
+    "language": "zh-chs",
+    "unit": "c",
+    "theme": "chameleon",
+    "uid": "UBB779AF55",
+    "hash": "9e448bd1c39cb66613a4ab223bc10e3b"
+});
+tpwidget("show");
+
 Win10.onReady(function () {
 
     //设置壁纸
@@ -22,12 +38,12 @@ function win10_forgive_me() {
         var blue=$('<img src="./img/presentation/bluescreen.jpg" style="position: fixed;width: 100%;height:100%;top:0;z-index:9999999999" />');
         setTimeout(function () {
             $('body').append(blue);
-        },3000);
+        },1000);
         setTimeout(function () {
             blue.remove();
             Win10.disableFullScreen();
             setTimeout(function () {
-                layer.msg('开个玩笑，别打我');
+                layer.msg('蓝屏效果');
             },1000);
         },7000);
         layer.close(index);
@@ -37,6 +53,27 @@ function win10_forgive_me() {
 var jachin = angular.module('jachin' , []);
 jachin.controller('jachinCtrl' , function($scope , $http){
     $scope.vpn = function(){
-        Win10.openUrl('//jachin.com/vpn.html?'+Math.random() , '<img class=\'icon\' src=\'img/icon/vpn.png\'/>vpn');
+        Win10.openUrl('//jachin.top/vpn.html?'+Math.random() , '<img class=\'icon\' src=\'img/icon/vpn.png\'/>vpn');
     }
-})
+    $scope.test = function(){
+        Win10.openUrl('//jachin.top/machine.html?'+Math.random() , '<img class=\'icon\' src=\'img/icon/machine.png\'/>vpn');
+    }
+});
+
+
+//天气预报
+(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))
+
+tpwidget("init", {
+    "flavor": "bubble",
+    "location": "WS0E9D8WN298",
+    "geolocation": "disabled",
+    "position": "top-right",
+    "margin": "10px 350px",
+    "language": "zh-chs",
+    "unit": "c",
+    "theme": "chameleon",
+    "uid": "UBB779AF55",
+    "hash": "9e448bd1c39cb66613a4ab223bc10e3b"
+});
+tpwidget("show");
