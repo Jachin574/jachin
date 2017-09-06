@@ -28,7 +28,8 @@ Win10.onReady(function () {
     ], 0.01);
 
     // Win10.newMsg('官方交流一群', '欢迎各位大侠加入讨论：<a target="_blank" href="https://jq.qq.com/?_wv=1027&k=4Er0u8i">[点击加入]205546163</a>')
-    Win10.newMsg('版本更新', '欢迎到来，2017-09-01更新')
+    Win10.newMsg('版本更新', '欢迎到来，2017-09-01更新');
+    Win10.newMsg('更新VPN模块', '');
 });
 
 //该函数可删除 Orz
@@ -68,8 +69,8 @@ tpwidget("init", {
     "flavor": "bubble",
     "location": "WS0E9D8WN298",
     "geolocation": "disabled",
-    "position": "top-right",
-    "margin": "10px 350px",
+    "position": "bottom-right",
+    "margin": "100px 10px",
     "language": "zh-chs",
     "unit": "c",
     "theme": "chameleon",

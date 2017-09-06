@@ -352,9 +352,9 @@ window.Win10 = {
             $("#win10_btn_time").html(hours+':'+mins+'<br/>'+year+'/'+month+'/'+date);
         },1000);
         //离开前警告
-        document.body.onbeforeunload = function(){
-            window.event.returnValue = Win10.lang( '系统可能不会保存您所做的更改','The system may not save the changes you have made.');
-        };
+        // document.body.onbeforeunload = function(){
+        //     window.event.returnValue = Win10.lang( '系统可能不会保存您所做的更改','The system may not save the changes you have made.');
+        // };
         Win10.buildList();//预处理左侧菜单
         Win10._startAnimate();//动画处理
         Win10.renderShortcuts();//渲染图标
@@ -376,9 +376,9 @@ window.Win10 = {
             }
         });
         //打广告
-        setTimeout(function () {
-            console.log(Win10.lang('本页由Win10-UI强力驱动\n更多信息：http://win10ui.yuri2.cn \nWin10-UI,轻松打造别具一格的后台界面 ','The page is strongly driven by Win10-UI.\nFor more info: http://win10ui.yuri2.cn.\n Win10-UI, easy to create a unique background interface.'))
-        },2000);
+        // setTimeout(function () {
+        //     console.log(Win10.lang('本页由Win10-UI强力驱动\n更多信息：http://win10ui.yuri2.cn \nWin10-UI,轻松打造别具一格的后台界面 ','The page is strongly driven by Win10-UI.\nFor more info: http://win10ui.yuri2.cn.\n Win10-UI, easy to create a unique background interface.'))
+        // },2000);
         //点击清空右键菜单
         $(document).click(function () {
             Win10._removeContextMenu();
@@ -770,13 +770,12 @@ window.Win10 = {
             closeBtn: 1, //不显示关闭按钮
             anim: 2,
             skin: 'layui-layer-molv',
-            title: 'WIN10-UI '+this._version,
+            title: 'About',
             shadeClose: true, //开启遮罩关闭
             area: ['320px', '200px'], //宽高
-            content: '<div style="padding: 10px;font-size: 12px">' +
-            '<p>支持组件:layer、jquery、animated.css、font-awesome</p>' +
-            '<p>尤里2号©版权所有</p>' +
-            '<p>作者邮箱:yuri2peter@qq.com</p>' +
+            content: '<div style="padding: 10px;font-size: 14px">' +
+            '<p>Author：Jachin</p>' +
+            '<p>Mail：www.381558301@gmail.com</p>' +
             '</div>'
         });
     },
