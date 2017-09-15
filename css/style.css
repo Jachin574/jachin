@@ -107,11 +107,13 @@ a{ text-decoration: none; }
 .h200{ height: 200px }
 .h220{ height: 220px }
 .h300{ height: 300px }
+.h450{ height: 450px }
 
 
 /*min-height*/
 .mh200{ min-height: 200px }
 .mh300{ min-height: 300px }
+.mh450{ min-height: 450px }
 
 /*min-width*/
 .mw200{ min-width: 200px }
