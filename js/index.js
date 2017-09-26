@@ -51,7 +51,16 @@ function win10_forgive_me() {
     });
 }
 
-var jachin = angular.module('jachin' , []);
+// 在exceptionHandler中调用fundebug.notifyError
+angular.module('exceptionOverwrite', [])
+    .factory('$exceptionHandler', function(){
+    return function(exception, cause){
+        console.error(exception);
+        fundebug.notifyError(exception);
+    };
+});
+
+var jachin = angular.module('jachin' , ['exceptionOverwrite']);
 jachin.controller('jachinCtrl' , function($scope , $http){
     $scope.vpn = function(){
         Win10.openUrl('//jachin.top/vpn.html?'+Math.random() , '<img class=\'icon\' src=\'img/icon/vpn.png\'/>vpn');
