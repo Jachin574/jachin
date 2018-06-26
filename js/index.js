@@ -30,6 +30,7 @@ Win10.onReady(function () {
     // Win10.newMsg('官方交流一群', '欢迎各位大侠加入讨论：<a target="_blank" href="https://jq.qq.com/?_wv=1027&k=4Er0u8i">[点击加入]205546163</a>')
     Win10.newMsg('版本更新', '欢迎到来，2017-09-01更新');
     Win10.newMsg('更新VPN模块', '');
+    Win10.newMsg('更新正则表达式模块', '2018-06-26');
 });
 
 //该函数可删除 Orz
@@ -51,22 +52,13 @@ function win10_forgive_me() {
     });
 }
 
-// 在exceptionHandler中调用fundebug.notifyError
-angular.module('exceptionOverwrite', [])
-    .factory('$exceptionHandler', function(){
-    return function(exception, cause){
-        console.error(exception);
-        fundebug.notifyError(exception);
-    };
-});
-
-var jachin = angular.module('jachin' , ['exceptionOverwrite']);
+var jachin = angular.module('jachin' , []);
 jachin.controller('jachinCtrl' , function($scope , $http){
     $scope.vpn = function(){
-        Win10.openUrl('//jachin.top/vpn.html?'+Math.random() , '<img class=\'icon\' src=\'img/icon/vpn.png\'/>vpn');
+        Win10.openUrl('jachin.top/vpn.html?'+Math.random() , '<img class=\'icon\' src=\'img/icon/vpn.png\'/>vpn');
     }
-    $scope.test = function(){
-        Win10.openUrl('//jachin.top/machine.html?'+Math.random() , '<img class=\'icon\' src=\'img/icon/machine.png\'/>vpn');
+    $scope.regexper = function(){
+        Win10.openUrl('jachin.top/regexper/index.html?'+Math.random() , '<img class=\'icon\' src=\'img/icon/machine.png\'/>vpn');
     }
 });
 
