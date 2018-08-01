@@ -31,6 +31,7 @@ Win10.onReady(function () {
     Win10.newMsg('版本更新', '欢迎到来，2017-09-01更新');
     Win10.newMsg('更新VPN模块', '');
     Win10.newMsg('更新正则表达式模块', '2018-06-26');
+    Win10.newMsg('更新纪念模块', '2018-08-01');
 });
 
 //该函数可删除 Orz
