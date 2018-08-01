@@ -323,3 +323,5 @@ a{ text-decoration: none; }
 .tit{ color: #ffffff;padding:10px;font-weight: bold; }
 .disabled{ cursor:not-allowed;background:#256d95; }
 .disabled{ background-color: #fafafa;pointer-events: none;cursor: not-allowed;opacity: 0.65;filter: alpha(opacity=65);-webkit-box-shadow: none;box-shadow: none;    color: #717171 !important; }
+
+.img-box span{ margin:0 10px; }

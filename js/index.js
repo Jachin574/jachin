@@ -55,10 +55,13 @@ function win10_forgive_me() {
 var jachin = angular.module('jachin' , []);
 jachin.controller('jachinCtrl' , function($scope , $http){
     $scope.vpn = function(){
-        Win10.openUrl('jachin.top/vpn.html?'+Math.random() , '<img class=\'icon\' src=\'img/icon/vpn.png\'/>vpn');
+        Win10.openUrl('./vpn.html?'+Math.random() , '<img class=\'icon\' src=\'img/icon/vpn.png\'/>vpn');
     }
     $scope.regexper = function(){
-        Win10.openUrl('jachin.top/regexper/index.html?'+Math.random() , '<img class=\'icon\' src=\'img/icon/machine.png\'/>vpn');
+        Win10.openUrl('./regexper/index.html?'+Math.random() , '<img class=\'icon\' src=\'img/icon/machine.png\'/>vpn');
+    }
+    $scope.memorial = function(){
+        Win10.openUrl('./memorial.html?'+Math.random() , '<img class=\'icon\' src=\'img/icon/icon-love.png\'/>vpn');
     }
 });
 
